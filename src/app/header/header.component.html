@@ -1,0 +1,22 @@
+<header class="header-container">
+    <section class="header-nav">
+        <app-menu></app-menu>
+        <p>+7 (921) 912-34-56</p>
+    </section>
+    <section class="header-main-content">
+        <img src="../../assets/header/logo.png" alt="" height='48px' />
+        <div class="search">
+            <input type="text" placeholder="Поиск по каталогу" class="search-input" />
+            <button><img src="../../assets/header/search.png" alt="" /></button>
+        </div>
+        <div class="user-info">
+            <div class="icon-container">
+                <app-icons *ngFor="let icon of icons" [iconCard]="{text: icon.text, imgPath: icon.imgPath}"></app-icons>
+            </div>
+            <div class="basket">
+                <img src="./image/header/basket.png" alt="" />
+                <p>6 500 P</p>
+            </div>
+        </div>
+    </section>
+</header>

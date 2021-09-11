@@ -1,0 +1,12 @@
+.menu {
+    display: flex;
+    a {
+        text-decoration: none;
+        color: #DADADA;
+        font-size: 13px;
+        line-height: 150%;
+    }
+    li:not(:last-child) {
+        margin-right: 40px;
+    }
+}

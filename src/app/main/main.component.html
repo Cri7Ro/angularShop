@@ -1,0 +1,27 @@
+<main>
+    <section class="promo-container">
+        <div class="promo">
+            <div class="promoText-container">
+                <button id="left" (click)="handleLeftClick()"><img src="../../assets/main_page/left.png" alt="" /></button>
+                <div class="promoText">
+                    <h1>{{currentPromoText}}</h1>
+                </div>
+            </div>
+            <button id="right" (click)="handleRightClick()"><img src="../../assets/main_page/right.png" alt="" /></button>
+        </div>
+        <div class="promo-line-container">
+            <div [ngClass]="{
+                active: currentPromoNumber === 0
+            }"></div>
+            <div [ngClass]="{
+                active: currentPromoNumber === 1
+            }"></div>
+            <div [ngClass]="{
+                active: currentPromoNumber === 2
+            }"></div>
+            <div [ngClass]="{
+                active: currentPromoNumber === 3
+            }"></div>
+        </div>
+    </section>
+</main>
